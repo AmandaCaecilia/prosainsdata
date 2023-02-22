@@ -408,7 +408,7 @@ title="Print to PDF"
       <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">link</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">content</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
   <span class="k">return</span> <span class="n">data</span>
 
-<span class="n">berita</span><span class="o">=</span><span class="n">scrape_berita</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">berita</span><span class="o">=</span><span class="n">scrape_berita</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">berita_result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">berita</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span><span class="s1">&#39;Isi&#39;</span><span class="p">])</span>
 <span class="n">berita_result</span>
 </pre></div>
@@ -416,7 +416,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e68682e4-60f8-46b1-8b15-a38175a21f46">
+  <div id="df-7d79510f-6808-4ab9-a4e6-23bf72512bad">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -443,64 +443,258 @@ title="Print to PDF"
   <tbody>
     <tr>
       <th>0</th>
+      <td>Sudirman Said soal Anies Merosot di Survei Kom...</td>
+      <td>Elektabilitas Anies berada di bawah Ganjar dan...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sudirman Said: Anies Perlu Waktu dan Ketenanga...</td>
+      <td>Juru Bicara Anies Baswedan, Sudirman Said meny...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Partai Gelora Pede Jabar Jadi Lumbung Suara di...</td>
+      <td>Partai Gelora Indonesia optimistis Jawa Barat ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Anies Dukung Sistem Pemilu Terbuka: Lebih Baik...</td>
+      <td>Anies Baswedan mendukung sistem coblos caleg a...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ketua DPP Golkar Tolak Sistem Coblos Partai: B...</td>
+      <td>Ketua DPP Golkar Dave Laksono menegaskan parta...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Bupati Kendal Dico Temui Gibran di Solo, Kaget...</td>
+      <td>Bupati Kendal Dico Ganinduto bertemu dengan Wa...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Projo Beri Selamat JoMan Dukung Prabowo di Pil...</td>
+      <td>Relawan Pro Jokowi (Projo) memberikan selamat ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Demokrat: Kasihan Koalisi Lain, Nama Capresnya...</td>
+      <td>Wasekjen Demokrat Jansen Sitindaon menilai 'Ko...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duet Anies-Sandi Mencuat di Survei Voxpol, PKS...</td>
+      <td>Voxpol Center Research and Consulting melakuka...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Relawan Jokowi Akan Gelar Musra Lagi di 11 Pro...</td>
+      <td>Gabungan Relawan Jokowi akan menggelar musyawa...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Besok, PKS Deklarasi Resmi Anies Baswedan Capr...</td>
+      <td>Iqbal mengatakan acara diawali musyawarah jaja...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Paloh Cerita Kunjungi PKS Sebelum Berkoalisi, ...</td>
+      <td>Ketum Partai NasDem Surya Paloh mengatakan Nas...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Elektabilitas NasDem Melesat Naik, Surya Paloh...</td>
+      <td>Ketum NasDem Surya Paloh buka suara soal elekt...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Cak Imin Beber Alasan Koalisi Gerindra-PKB Bel...</td>
+      <td>Koalisi Gerindra-PKB hingga saat ini masih bel...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Ganjar Unggul Versi Litbang Kompas, PDIP Tetap...</td>
+      <td>Ganjar mendapatkan elektabilitas tertinggi ver...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Kelakar Surya Paloh soal Cawapres Anies: Janga...</td>
+      <td>Ketum NasDem Surya Paloh melontarkan guyonan s...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Demokrat-NasDem Tolak Wacana Sistem Pemilu Pro...</td>
+      <td>Surya Paloh dan AHY memberikan keterangan pers...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Cak Imin Buka Suara soal Potensi Duet dengan A...</td>
+      <td>Ketum PKB Muhaimin Iskandar buka suara soal ha...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>AHY Dampingi Anies? Paloh: Potongan Ganteng, L...</td>
+      <td>Ketua Umum Surya Paloh menjawab pertanyaan apa...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Surya Paloh: Sikap Pemerintah Jelas Dukung Sis...</td>
+      <td>Surya Paloh mengungkit soal sistem pemilu usai...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>TGB Dukung Gibran Maju Gubernur: Sunatullah...</td>
+      <td>TGB mendukung Wali Kota Solo Gibran Rakabuming...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Respons Santai Cak Imin soal Gus Yahya Sebut W...</td>
+      <td>Ketum PKB Cak Imin merepsons santai pernyataan...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>AHY di Depan Paloh: Semoga Koalisi Perubahan B...</td>
+      <td>Ketum Demokrat AHY menerima kunjungan Ketum Na...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Gerindra soal Survei Litbang Kompas: Kami Sema...</td>
+      <td>Habiburokhman menyebut tren suara Prabowo yang...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Gibran soal Kriteria Cagub Jateng PDIP Versi B...</td>
+      <td>Wali Kota Solo Gibran Rakabuming yang siap maj...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Anies Merosot di Survei Litbang Kompas, NasDem...</td>
+      <td>Survei Litbang Kompas menunjukkan elektabilita...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Bambang Pacul Beber Kriteria Cagub Jateng Peng...</td>
+      <td>Ketua DPD PDIP Jawa Tengah, Bambang Wuryanto a...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Momen AHY Payungi Surya Paloh</td>
+      <td>Ketum Partai NasDem Surya Paloh temui Ketum Pa...</td>
+    </tr>
+    <tr>
+      <th>28</th>
       <td>AHY Suguhkan Masakan Spesial Favorit Paloh di ...</td>
       <td>Surya Paloh menyambangi DPP Partai Demokrat un...</td>
     </tr>
     <tr>
-      <th>1</th>
+      <th>29</th>
       <td>Survei Litbang Kompas Capres 2024: Ganjar Ungg...</td>
       <td>Survei Litbang Kompas menunjukkan elektabilita...</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>30</th>
       <td>Dipayungi AHY, Surya Paloh Tiba di Markas Demo...</td>
       <td>Paloh langsung disambut oleh AHY. Terlihat AHY...</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>31</th>
       <td>Survei Litbang Kompas: Ridwan Kamil Dominan di...</td>
       <td>Gubernur Jawa Barat Ridwan Kamil unggul domina...</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>32</th>
       <td>Bawaslu Dorong Ada Penerjemah bagi Disabilitas...</td>
       <td>Bawaslu mendorong peserta Pemilu 2024 untuk me...</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
+      <th>33</th>
+      <td>PD dan PKS Tak Iri Meski Elektabilitas NasDem ...</td>
+      <td>PKS dan Demokrat memahami kenaikan elektoral N...</td>
     </tr>
     <tr>
-      <th>95</th>
-      <td>Politisi PAN Tolak Pemilu Coblos Partai: Terbu...</td>
-      <td>MK sedang melakukan uji materi UU Nomor 7 tahu...</td>
+      <th>34</th>
+      <td>Pileg 2024, PKB Bidik 14 Kursi DPRD Kabupaten ...</td>
+      <td>PKB mulai nge-gas jelang Pemilu 2024. Partai P...</td>
     </tr>
     <tr>
-      <th>96</th>
-      <td>Sekjen PAN Tak Sangkal Wiranto Mau Gabung: Tem...</td>
-      <td>Kabar mantan Ketua Umum Partai Hanura, Wiranto...</td>
+      <th>35</th>
+      <td>Mangku Pastika-Gede Suardana Tampil 'Mesra' da...</td>
+      <td>Bakal calon DPD Dr. Gede Suardana bersama angg...</td>
     </tr>
     <tr>
-      <th>97</th>
-      <td>Jokowi Ungkap Ada Capres Dukungannya Tidak Had...</td>
-      <td>Presiden Jokowi menyebut sejumlah nama yang di...</td>
+      <th>36</th>
+      <td>Andre Rosiade Tegaskan Polarisasi Tak Diperluk...</td>
+      <td>Andre Rosiade berbicara mengenai rekonsiliasi ...</td>
     </tr>
     <tr>
-      <th>98</th>
-      <td>Namanya Disebut Jokowi di Daftar Capres-Cawapr...</td>
-      <td>AHY merespons sambutan Presiden Jokowi soal da...</td>
+      <th>37</th>
+      <td>Petugas Pantarlih Lumajang Coklit Data Pemilih...</td>
+      <td>Petugas Pantarlih di Lumajang ini unik. Dia te...</td>
     </tr>
     <tr>
-      <th>99</th>
-      <td>Bendera-Nomor Urut Parpol Boleh Dipasang, Tapi...</td>
-      <td>Menurut Hasyim ada perbedaan antara sosialisas...</td>
+      <th>38</th>
+      <td>Gus Yahya Tak Haramkan Warga NU Coblos PAN, PK...</td>
+      <td>Ketua Umum PBNU Gus Yahya menyebut warga NU ta...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Suara NU Jadi Rebutan di Pemilu 2024, Pengamat...</td>
+      <td>Suara NU diprediksi akan pecah dan jadi rebuta...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>PKS Rakernas Akhir Pekan Ini, Gelar Deklarasi ...</td>
+      <td>PKS akan menggelar rapat kerja nasional (raker...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>PDIP Ungkap 3 Kriteria Pengganti Ganjar di Pil...</td>
+      <td>Ketua DPD PDI Perjuangan (PDIP) Jawa Tengah, B...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Mahfud Md Gelar Pertemuan dengan Sejumlah Eks ...</td>
+      <td>Mahfud Md menekankan negara tunduk kepada kons...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>PDIP Beberkan 3 Kriteria Pengganti Ganjar di P...</td>
+      <td>Ketua PDIP Jateng Bambang Pacul membeberkan ti...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Cak Imin soal Capres-cawapres 2024: Semua Stuc...</td>
+      <td>Ketua Umum PKB Cak Imin bicara soal perkembang...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Cak Imin Belum Terpikir Sama Sekali Berpasanga...</td>
+      <td>Waketum PKB Jazilul berharap Cak Imin jadi cap...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>PPP Heran Waketum PKB Banding-bandingkan Kursi...</td>
+      <td>PPP mengaku heran dengan sikap Waketum PKB Jaz...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Cak Imin: Kalau Putusan MK Pemilu Tertutup, Ne...</td>
+      <td>Cak Imin memendam kekhawatiran jika sistem pem...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Pantarlih Mulai Lakukan Coklit Daftar Pemilih ...</td>
+      <td>Pantarlih mulai melakukan proses pencocokan da...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Waketum PKB: Jangan Sampai PKB Kayak Partai Ij...</td>
+      <td>Jazilul mengungkit partai lain yang berwarna h...</td>
     </tr>
   </tbody>
 </table>
-<p>100 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e68682e4-60f8-46b1-8b15-a38175a21f46')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7d79510f-6808-4ab9-a4e6-23bf72512bad')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -551,12 +745,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e68682e4-60f8-46b1-8b15-a38175a21f46 button.colab-df-convert');
+          document.querySelector('#df-7d79510f-6808-4ab9-a4e6-23bf72512bad button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e68682e4-60f8-46b1-8b15-a38175a21f46');
+          const element = document.querySelector('#df-7d79510f-6808-4ab9-a4e6-23bf72512bad');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
