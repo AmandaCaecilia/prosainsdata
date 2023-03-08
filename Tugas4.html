@@ -387,6 +387,9 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="tugas-4-menggabungkan-data">
 <h1>Tugas 4 ( Menggabungkan Data )<a class="headerlink" href="#tugas-4-menggabungkan-data" title="Permalink to this heading">#</a></h1>
+<p>Pertama tama saya memisahkan kolom Petal Length, Petal Width, Sepal Length, dan Sepal Width + class dan ditambah masing-masing kolom id di csv. kemudian saya mengkonversi csv to sql menjadi script sql. setelah masing-masing kolom telah di ubah ke script sql, selanjutnya saya memasukkan data tersebut ke masing” aplikasi database yaitu my sql, sql server, dan postgres sql local + elephant.
+Pertama, kolom sepal length saya masukkan ke database postgressql local, kemudian kolom sepal width saya masukkkan ke database postgressql elephantsql, kolom petal length dimasukkan ke database mysql local, dan terakhir kolom petalwidth +class dimasukkan ke database sql server, semua dimasukkkan sesuai dengan tahapan masing” database tersebut dengan menggunakan script sql yang sudah dikonversi dari csv. kemudian setelah berhasil memasukkan ke semua database lanjut menjadikan 1 kolom-kolom tersebut. disini saya mencoba menggunakan orchest namun tidak bisa untuk yang local (hanya bisa postgrest elephantsql saja) sehingga saya mencoba menggabungkan data-data dari tiap database tersebut dengan menggunakan google colab.</p>
+<p>Disini code untuk mengambil data dari sql server , disini masukkan server dan database name dengan sesuai.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
@@ -431,18 +434,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>psycopg2
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: psycopg2 in c:\users\bpkad\anaconda3\lib\site-packages (2.9.5)
-</pre></div>
-</div>
-</div>
-</div>
+<p>Disini code untuk mengambil data dari postgressql elephantsql , disini masukkan host, database name,username,dan password yang sesuai.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -585,6 +577,7 @@ Connection successful
 <p>150 rows × 2 columns</p>
 </div></div></div>
 </div>
+<p>Disini code untuk mengambil data dari postgressql local , disini masukkan host, database name,username,dan password yang sesuai.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -727,23 +720,7 @@ Connection successful
 <p>150 rows × 2 columns</p>
 </div></div></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>mysqlclient
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>mysql-connector-python
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>pymysql
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: mysqlclient in c:\users\bpkad\anaconda3\lib\site-packages (2.1.1)
-Requirement already satisfied: mysql-connector-python in c:\users\bpkad\anaconda3\lib\site-packages (8.0.32)
-Requirement already satisfied: protobuf&lt;=3.20.3,&gt;=3.11.0 in c:\users\bpkad\anaconda3\lib\site-packages (from mysql-connector-python) (3.19.1)
-Requirement already satisfied: pymysql in c:\users\bpkad\anaconda3\lib\site-packages (1.0.2)
-</pre></div>
-</div>
-</div>
-</div>
+<p>Disini code untuk mengambil data dari mysql , disini masukkan host, database name,username,dan password yang sesuai juga.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mysql.connector</span>
@@ -852,6 +829,7 @@ Requirement already satisfied: pymysql in c:\users\bpkad\anaconda3\lib\site-pack
 <p>150 rows × 2 columns</p>
 </div></div></div>
 </div>
+<p>setelah itu gabungkan semua kolom data dari tiap-tiap database tadi sesuai id.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge df</span>
@@ -1029,6 +1007,7 @@ Requirement already satisfied: pymysql in c:\users\bpkad\anaconda3\lib\site-pack
 <p>150 rows × 9 columns</p>
 </div></div></div>
 </div>
+<p>kemudian drop atau hilangkan kolom id nya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1156,6 +1135,7 @@ Requirement already satisfied: pymysql in c:\users\bpkad\anaconda3\lib\site-pack
 <p>150 rows × 5 columns</p>
 </div></div></div>
 </div>
+<p>kemudian melakukan perhitungan akurasi dengan menggunakan 2 metode yaitu decision tree dan KNN.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
