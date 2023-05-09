@@ -162,6 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas4.html">Tugas 4 - ( Menggabungkan Data )</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS.html"><strong>UTS</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas5.html">Tugas 5 - Pagerank</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas6.html">Tugas 6 - Topic Modelling</a></li>
 </ul>
 
     </div>
@@ -363,9 +364,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -381,14 +380,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-berita-online-detik-com-menggunakan-beautifulsoup">Crawling data berita online (detik.com) menggunakan BeautifulSoup</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -400,8 +391,7 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="tugas-3-crawling-data-berita-online">
 <h1>Tugas 3 - Crawling data Berita Online<a class="headerlink" href="#tugas-3-crawling-data-berita-online" title="Permalink to this heading">#</a></h1>
-<div class="section" id="crawling-data-berita-online-detik-com-menggunakan-beautifulsoup">
-<h2>Crawling data berita online (<a class="reference external" href="http://detik.com">detik.com</a>) menggunakan BeautifulSoup<a class="headerlink" href="#crawling-data-berita-online-detik-com-menggunakan-beautifulsoup" title="Permalink to this heading">#</a></h2>
+<p>Crawling data berita online (<a class="reference external" href="http://detik.com">detik.com</a>) menggunakan BeautifulSoup</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">req</span>
@@ -442,7 +432,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-dfc162d3-5714-4b05-b008-3267d3e8e997">
+  <div id="df-53ca5012-1a81-414e-87af-c297c31dfc50">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -469,258 +459,258 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>PDIP Siapkan 4 Tokoh Internal untuk Pilwalkot ...</td>
-      <td>PDI Perjuangan mengaku telah menyiapkan empat ...</td>
+      <td>Belum Ada Parpol yang Serahkan Berkas Bacaleg ...</td>
+      <td>KPU Jatim mengungkap belum ada parpol yang men...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Polda Bali Masih Rancang Pengamanan Pemilu 2024</td>
-      <td>Polda Bali masih merancang pengamanan Pemilu 2...</td>
+      <td>Sowan Abah Suyuthi di Kaliwungu Kendal, Ganjar...</td>
+      <td>Ganjar berkunjung ke Ponpes Manba'ul Hikmah di...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Rommy Bicara 2 Skenario Jokowi di Pemilu 2024</td>
-      <td>Romahurmuziy atau Rommy bicara soal skenario P...</td>
+      <td>Gerindra Daftarkan Caleg ke KPU 13 Mei, Ada Ke...</td>
+      <td>Ketua DPP Harian Partai Gerinda Dasco mengatak...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Rommy: Jokowi Minta Erick dan Sandiaga Tebar P...</td>
-      <td>Romahurmuziy menyebut Presiden meminta Erick T...</td>
+      <td>Relawan Ganjar Serahkan 5 Juta KTP Dukungan ke...</td>
+      <td>Sahabat Ganjar menjadi salah satu relawan terb...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NasDem Bali Targetkan 1 Kursi DPR RI di Pemilu...</td>
-      <td>DPW Partai Nasional Demokrat (NasDem) Bali men...</td>
+      <td>PKS Parpol Pertama Daftarkan Bacaleg, tapi Bel...</td>
+      <td>Partai Keadilan Sejahtera (PKS) menjadi yang p...</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Rommy: PPP Mau Jadi Pemegang Saham Seri A Capr...</td>
-      <td>Ketua Majelis Pertimbangan PPP Muhammad Romahu...</td>
+      <td>Pesan Gerindra ke PKB soal Nama Cawapres Prabo...</td>
+      <td>Ketua Harian DPP Gerindra Sufmi Dasco Ahmad me...</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Mahfud Md: Pengadilan Negeri Kok Menunda Pemil...</td>
-      <td>Putusan PN Jakarta Pusat yang mengabulkan guga...</td>
+      <td>Gerindra Tegaskan Jokowi Tak Arahkan Koalisi d...</td>
+      <td>Ketua Harian DPP Gerindra Dasco menegaskan tak...</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Ketum Partai Prima Balas Mahfud soal Putusan P...</td>
-      <td>Ketum Partai Prima merespons pernyataan Menko ...</td>
+      <td>Beri Dukungan ke Ganjar, Relawan Serahkan Ribu...</td>
+      <td>Relawan Sahabat Ganjar menggelar aksi simbolik...</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Ketum Prima Balas Mahfud soal Ada Permainan di...</td>
-      <td>Ketum Partai Prima merespons pernyataan Mahfud...</td>
+      <td>NasDem dan Hanura Daftar Caleg Pemilu 2024 ke ...</td>
+      <td>Partai NasDem akan mendaftarkan bakal calon an...</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Panglima TNI Minta PM Cegah dan Tindak Prajuri...</td>
-      <td>Panglima TNI Laksamana Yudo Margono meminta pr...</td>
+      <td>Bawaslu Tangani 81 Sengketa Pencalonan DPD, Ra...</td>
+      <td>Bawaslu menangani 81 sengketa dari bakal calon...</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>Habiburokhman Sedih Mahfud Bicara Ada Main di ...</td>
-      <td>Habiburokhman sedih dengan Mahfud yang bilang ...</td>
+      <td>Demokrat Jabar Bantah Minta Duit Rp 500 Juta B...</td>
+      <td>Partai Demokrat Jabar membantah Wakil Ketua DP...</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>KPU Tunggu Undangan Rapat di DPR Buntut Putusa...</td>
-      <td>KPU menunggu undangan resmi dari Komisi II DPR...</td>
+      <td>Wakil Ketua MK Minta Ahli Elaborasi Sistem Pem...</td>
+      <td>Sistem pemilu campuran yaitu mengawinkan siste...</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>Ahmad Basarah Ajak GM FKPPI Jaga Persatuan Jel...</td>
-      <td>Ahmad Basarah mengatakan persatuan dan kesatua...</td>
+      <td>Kata Senior PDIP soal Gestur Kaesang Pakai Kau...</td>
+      <td>Putra bungsu Presiden Joko Widodo (Jokowi), Ka...</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>Istri Ungkap Viktor Laiskodat Tak Maju Pilgub ...</td>
-      <td>Gubernur Nusa Tenggara Timur (NTT) Viktor Lais...</td>
+      <td>Bawaslu, DKPP, dan KPU Bahas PKPU soal Keterwa...</td>
+      <td>Bawaslu akan membentuk forum tripartit bersama...</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>NasDem Ungkap Sederet Faktor Khofifah Berpelua...</td>
-      <td>Ketua DPP NasDem Effendy Choirie saat itu meng...</td>
+      <td>Diminta Rp 500 Juta untuk Nyaleg, Kader Demokr...</td>
+      <td>Kader Partai Demokrat di Jabar, Didin memilih ...</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>KSP soal Putusan Tunda Pemilu: Nggak Ada Hubun...</td>
-      <td>Moeldoko menegaskan putusan PN Jakpus soal pen...</td>
+      <td>Sri Mulyani Ingatkan Bahaya Jika Pemilu 2024 N...</td>
+      <td>Menteri Keuangan Sri Mulyani Indrawati mengung...</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>PSI Koyak Kardus Hitam Depan MK Tolak Pemilu C...</td>
-      <td>PSI mengoyak kardus hitam dalam aksi penolakan...</td>
+      <td>Wakil Ketua Demokrat Jabar Mundur, Ngaku Dimin...</td>
+      <td>Wakil Ketua DPD Partai Demokrat Jabar Didin Su...</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>KIB Belum Satu Suara, Ini Capres-Cawapres Usul...</td>
-      <td>Koalisi Indonesia Bersatu (KIB) masih membahas...</td>
+      <td>Respons KPU soal Kritik Masyarakat Terkait PKP...</td>
+      <td>PKPU Nomor 10 Tahun 2023 menuai kritik dari ka...</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>Tolak Sistem Pemilu Tertutup, PSI Gelar Aksi d...</td>
-      <td>PSI menggelar aksi di depan Gedung MK sebagai ...</td>
+      <td>Segera Ditutup! Yuk Jodohkan Capres-Cawapres F...</td>
+      <td>The Matchmaker tahap kedua akan segera ditutup...</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>KPU Gelar Uji Publik PKPU Pencalonan Anggota D...</td>
-      <td>KPU melaksanakan uji publik PKPU. Uji publik i...</td>
+      <td>Belum Daftarkan Bacaleg ke KPU, Demokrat Dompu...</td>
+      <td>Ketua DPD Demokrat Dompu Ismul Rahmadi mengaku...</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>Menerka Nasib KIB Usai Rommy Sebut Berpotensi ...</td>
-      <td>Ketua Majelis Pertimbangan PPP Rommy mengataka...</td>
+      <td>PKS Kompak 'Ngegas' Daftar Caleg, Ternyata Sya...</td>
+      <td>PKS menjadi partai pertama yang mengajukan nam...</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>Reaksi Keras PAN hingga Golkar Tanggapi Predik...</td>
-      <td>PAN dan Partai Golkar bereaksi keras atas pern...</td>
+      <td>Gerindra Bingung Maksud Benny Harman soal Joko...</td>
+      <td>Benny K Harman mewanti-wanti jika Jokowi tak n...</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>KPU Buka Suara Absen Sebagai Saksi Gugatan Par...</td>
-      <td>"Dengan demikian ketika perkara dibawa ke rana...</td>
+      <td>Anies-Ganjar Safari ke Jember, Bupati Dinilai ...</td>
+      <td>Anies dan Ganjar disinyalir berebut massa Nahd...</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>Targetkan 12 Kursi di 2024, PDIP Sumenep Konso...</td>
-      <td>PDIP Sumenep menargetkan 12 kursi dalam pemilu...</td>
+      <td>Pintu Lebar PKS Terbuka Usai Sandiaga Kirim Ko...</td>
+      <td>Partai Keadilan Sejahtera (PKS) menyambut Sand...</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>PPP Sebut Nisfu Syaban Momentum Sambut Ramadan...</td>
-      <td>Waketum DPP PPP sebut Nisfu Syaban menjadi mom...</td>
+      <td>Relawan Menanti Mandat Jokowi untuk 2024</td>
+      <td>Relawan Jokowi menggelar puncak Musra di Istor...</td>
     </tr>
     <tr>
       <th>25</th>
-      <td>KPU Tegaskan Putusan PN Jakpus Tak Pengaruhi T...</td>
-      <td>Ketua KPU menegaskan putusan Pengadilan Negeri...</td>
+      <td>Manuver Politik Ganjar-Anies Berebut Suara Nah...</td>
+      <td>Suara Nahdliyin di Jember dan kawasan Tapal Ku...</td>
     </tr>
     <tr>
       <th>26</th>
-      <td>KPU Ajukan Banding Minggu Ini, Tahapan Pemilu ...</td>
-      <td>KPU menyatakan akan mengajukan upaya hukum ban...</td>
+      <td>PAN NTB Pede Raih 2 Kursi DPR, Pasang Rudy Mbo...</td>
+      <td>Partai Amanat Nasional (PAN) Provinsi NTB mena...</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>Surya Paloh Ungkap Tujuan Temui Prabowo: Demi ...</td>
-      <td>Ketua Umum Nasional Demokrat (NasDem) Surya Pa...</td>
+      <td>Ragam Cara Unik Calon Legislator PKS di Jabar ...</td>
+      <td>Ragam cara unik dilakukan bakal calon anggota ...</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>Komnas HAM Tolak Penundaan Pemilu: Hak Konstit...</td>
-      <td>Komnas HAM menolak adanya penundaan Pemilu 202...</td>
+      <td>Ingin Nyaleg, Neko Wesha Mundur dari Jabatan W...</td>
+      <td>Wakil Bupati Kabupaten Lingga, Kepri, Neko Wes...</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>Anies Gandeng AHY di Pilpres 2024, Surya Paloh...</td>
-      <td>Ketua Umum Nasional Demokrat (NasDem) Surya Pa...</td>
+      <td>7 Komisioner Bawaslu Sulsel Periode 2023-2028 ...</td>
+      <td>Bawaslu RI telah mengumumkan 7 komisioner Bawa...</td>
     </tr>
     <tr>
       <th>30</th>
-      <td>KPU Sebut Coklit di Kota Medan Capai 97 Persen</td>
-      <td>Proses Coklit pemilu 2024 di Kota Medan sudah ...</td>
+      <td>PKS Sulsel Daftarkan 25 Bacaleg Perempuan untu...</td>
+      <td>PKS Sulsel mendaftarkan 25 bacaleg perempuan u...</td>
     </tr>
     <tr>
       <th>31</th>
-      <td>Soal Politik Identitas, Ketua PKB Minta Jangan...</td>
-      <td>Ketua DPP PKB Daniel Johan menilai politik ide...</td>
+      <td>Perludem Ingatkan Presiden Ambil Cuti Bila Hen...</td>
+      <td>Perludem mengungkapkan jika ingin mendukung sa...</td>
     </tr>
     <tr>
       <th>32</th>
-      <td>KPU Tepis KAMMI, Klaim Serius Hadapi Partai Pr...</td>
-      <td>KPU diadukan oleh KAMMI ke DKPP terkait dugaan...</td>
+      <td>Hitung-hitungan Peta Suara Nahdliyin Jember ya...</td>
+      <td>Dua capres Ganjar Pranowo dan Anies Baswedan s...</td>
     </tr>
     <tr>
       <th>33</th>
-      <td>Komisi II DPR Agendakan Rapat di Tengah Reses ...</td>
-      <td>Komisi II DPR mengagendakan rapat membahas put...</td>
+      <td>Relawan Amanat Indonesia Tegaskan Tak Ada Hubu...</td>
+      <td>Hal itu ditegaskannya untuk menyikapi Ketua DP...</td>
     </tr>
     <tr>
       <th>34</th>
-      <td>Grace Nyatakan PSI Ogah Masuk ke Koalisi Pro A...</td>
-      <td>PSI memastikan tidak akan bergabung ke Koalisi...</td>
+      <td>Rommy PPP: Pak Jokowi Wajib Terlibat Pencapres...</td>
+      <td>Ketua Majelis Pertimbangan DPP PPP M Romahurmu...</td>
     </tr>
     <tr>
       <th>35</th>
-      <td>Geger Putusan Tunda Pemilu, Pakar UGM: Hakimny...</td>
-      <td>Pakar hukum tata negara UGM Andi Sandi menyebu...</td>
+      <td>Bawaslu 'Usir' Mobil Dinas Gubernur Sumbar Usa...</td>
+      <td>Bawaslu Sumbar mengusir mobil dinas Gubernur S...</td>
     </tr>
     <tr>
       <th>36</th>
-      <td>Resapi Pesan Mbah Moen, Ketua PWNU Jatim Siap ...</td>
-      <td>Ketua Pengurus Wilayah Nahdlatul Ulama (PWNU) ...</td>
+      <td>9 Politikus Muda Partai Parlemen Diundang Keml...</td>
+      <td>Sembilan politikus muda dari partai politik pa...</td>
     </tr>
     <tr>
       <th>37</th>
-      <td>KAMMI Adukan KPU ke DKPP Terkait Putusan PN Ja...</td>
-      <td>KAMMI mengadukan KPU ke DKPP. Pengaduan terseb...</td>
+      <td>Masyarakat Peduli Keterwakilan Perempuan ke Ba...</td>
+      <td>Masyarakat Peduli Keterwakilan Perempuan menda...</td>
     </tr>
     <tr>
       <th>38</th>
-      <td>Romy PPP Singgung KIB Jalan di Tempat, Golkar ...</td>
-      <td>Ketua Majelis Pertimbangan PPP Muhammad Romahu...</td>
+      <td>Alumni Unair Nyatakan Dukungan untuk Ganjar Pr...</td>
+      <td>Alumni Unair yang tergabung dalam Jaringan Are...</td>
     </tr>
     <tr>
       <th>39</th>
-      <td>Jelang Pemilu 2024, Kemenkumham DIY Pastikan H...</td>
-      <td>Kemenkumham Kantor Wilayah DIY memastikan hak ...</td>
+      <td>PDIP Banggakan Survei Ganjar: Keputusan Ibu Me...</td>
+      <td>Hasto menyebut elektabilitas Ganjar Pranowo me...</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>DKPP Gelar Sidang Putusan Dugaan Kecurangan Ve...</td>
-      <td>DKPP akan menggelar sidang putusan dugaan pela...</td>
+      <td>Jokowi dan 6 Ketum Koalisi Bahas Cawapres di I...</td>
+      <td>PDIP membantah pertemuan 6 ketum parpol dengan...</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>Siasat Menunda Pemilu 2024</td>
-      <td>Putusan hakim PN Jakpus dianggap tidak kompete...</td>
+      <td>Fahri Bicara Koalisi Oposisi Nggak Jelas Gegar...</td>
+      <td>Fahri Hamzah bicara soal kesulitan koalisi opo...</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>KPU-Bawaslu Kota Malang Saling Lempar soal Mar...</td>
-      <td>Sejumlah baliho partai politik bertebaran di K...</td>
+      <td>Naik Ojol, PKS Partai Pertama Daftar Bacaleg d...</td>
+      <td>Partai Keadilan Sejahtera (PKS) menjadi partai...</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>Hasil Sementara The Matchmaker: Ganjar-Erick J...</td>
-      <td>Makin banyak detikers vote capres-cawapres fav...</td>
+      <td>Sanggah Saran JK, PDIP Sebut Presiden Sebelum ...</td>
+      <td>PDIP menjawab JK yang menyarankan agar Preside...</td>
     </tr>
     <tr>
       <th>44</th>
-      <td>KPU Ajukan Banding Putusan PN Jakpus soal Penu...</td>
-      <td>KPU RI siap untuk mengajukan banding putusan P...</td>
+      <td>Relawan Akan Serahkan Capres-cawapres Hasil Mu...</td>
+      <td>Berikut daftar nama capres dan cawapres hasil ...</td>
     </tr>
     <tr>
       <th>45</th>
-      <td>PDIP Respons NasDem soal Megawati Mau Temui Su...</td>
-      <td>Sekjen DPP PDIP Hasto Kristiyanto merespons ko...</td>
+      <td>Gerindra Tegaskan Prabowo Teruskan Program Jok...</td>
+      <td>Partai Gerindra menyebut sinyal dukungan Presi...</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>Ridwan Wittiri Wanti-wanti Kader PDIP Sulsel, ...</td>
-      <td>Ketua DPD PDIP Sulsel Andi Ridwan Wittiri mewa...</td>
+      <td>Adik Bupati Lombok Timur Kembali Mendaftar DPD...</td>
+      <td>Adik kandung Bupati Lombok Timur Sukiman Azmy,...</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>Sorotan Jokowi soal Pro Kontra Putusan Pemilu ...</td>
-      <td>Presiden Jokowi turut merespons putusan PN Jak...</td>
+      <td>Demokrat: Jika Benar Tak Netral Pilpres, Jokow...</td>
+      <td>Demokrat mengkritik sikap Presiden Jokowi yang...</td>
     </tr>
     <tr>
       <th>48</th>
-      <td>Hasto Beberkan Fokus PDIP di Sulsel, Mau Naikk...</td>
-      <td>Sekjen DPP PDIP Hasto Kristiyanto membeberkan ...</td>
+      <td>Ganjar atau Prabowo yang Lebih Diendorse Jokow...</td>
+      <td>Lembaga SPIN menggelar survei soal dukungan Pr...</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>Rommy Sebut Peluang Pemilu Digelar 2024 50:50,...</td>
-      <td>Romahurmuziy bicara peluang pemilu digelar 202...</td>
+      <td>Projo Pastikan Jokowi Hadiri Puncak Musra Rela...</td>
+      <td>Budi mengatakan pihaknya akan mendengarkan per...</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-dfc162d3-5714-4b05-b008-3267d3e8e997')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-53ca5012-1a81-414e-87af-c297c31dfc50')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -771,12 +761,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-dfc162d3-5714-4b05-b008-3267d3e8e997 button.colab-df-convert');
+          document.querySelector('#df-53ca5012-1a81-414e-87af-c297c31dfc50 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-dfc162d3-5714-4b05-b008-3267d3e8e997');
+          const element = document.querySelector('#df-53ca5012-1a81-414e-87af-c297c31dfc50');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -801,7 +791,6 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">berita_result</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Berita_Online.csv&#39;</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -865,20 +854,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-data-berita-online-detik-com-menggunakan-beautifulsoup">Crawling data berita online (detik.com) menggunakan BeautifulSoup</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

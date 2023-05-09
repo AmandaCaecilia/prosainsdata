@@ -63,6 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas 6 - Topic Modelling" href="Tugas6.html" />
     <link rel="prev" title="UTS" href="UTS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -161,6 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas4.html">Tugas 4 - ( Menggabungkan Data )</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS.html"><strong>UTS</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 5 - Pagerank</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas6.html">Tugas 6 - Topic Modelling</a></li>
 </ul>
 
     </div>
@@ -481,7 +483,7 @@ C(T1) adalah jumlah link keluar (outbound link) pada halaman T1</em></p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d7e6e7a75be1a45abb82eaed3a34e67cf53eb28ce650dcbdbb708d9d38ca8660.png" src="_images/d7e6e7a75be1a45abb82eaed3a34e67cf53eb28ce650dcbdbb708d9d38ca8660.png" />
+<img alt="_images/a27f88a8796f8ea412eb63ba1688f78a2db4582a39a05a3fe7183fcae8a752d6.png" src="_images/a27f88a8796f8ea412eb63ba1688f78a2db4582a39a05a3fe7183fcae8a752d6.png" />
 </div>
 </div>
 </div>
@@ -551,9 +553,8 @@ C(T1) adalah jumlah link keluar (outbound link) pada halaman T1</em></p></li>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting PyPDF2
   Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/232.6 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━ <span class=" -Color -Color-Green">225.3/232.6 kB</span> <span class=" -Color -Color-Red">7.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">232.6/232.6 kB</span> <span class=" -Color -Color-Red">6.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: typing_extensions&gt;=3.10.0.0 in /usr/local/lib/python3.9/dist-packages (from PyPDF2) (4.5.0)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">232.6/232.6 kB</span> <span class=" -Color -Color-Red">12.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: PyPDF2
@@ -574,8 +575,8 @@ Building wheels for collected packages: docx2txt
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for docx2txt (setup.py) ... ?25l?25hdone
-  Created wheel for docx2txt: filename=docx2txt-0.8-py3-none-any.whl size=3977 sha256=094e2459689d9b08948e1d78d23d32aa22c68274ce6c8a48671168c661b4c67a
-  Stored in directory: /root/.cache/pip/wheels/40/75/01/e6c444034338bde9c7947d3467807f889123465c2371e77418
+  Created wheel for docx2txt: filename=docx2txt-0.8-py3-none-any.whl size=3957 sha256=0d2530d36e15dfa76c8626b554adf64fd37168168b101b28384e487c13c766ce
+  Stored in directory: /root/.cache/pip/wheels/22/58/cf/093d0a6c3ecfdfc5f6ddd5524043b88e59a9a199cb02352966
 Successfully built docx2txt
 </pre></div>
 </div>
@@ -684,7 +685,7 @@ Successfully installed docx2txt-0.8
 <span class="g g-Whitespace">      </span><span class="mi">4</span> 
 <span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="c1"># now read the type of document</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/ipykernel/kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
 <span class="g g-Whitespace">    </span><span class="mi">846</span>         <span class="s2">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">    </span><span class="mi">847</span><span class="s2">         if not self._allow_stdin:</span>
 <span class="ne">--&gt; </span><span class="mi">848</span><span class="s2">             raise StdinNotImplementedError(</span>
@@ -1445,6 +1446,15 @@ hoped that he had forgotten his anger by then.
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title"><strong>UTS</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Tugas6.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas 6 - Topic Modelling</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
